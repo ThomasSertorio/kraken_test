@@ -1,0 +1,6 @@
+<h1>Projects#new</h1>
+<%= simple_form_for(@project) do |f| %>
+  <%= f.input :code %>
+  <%= f.input :client_id, collection: Client.all %>
+  <%= f.submit %>
+<% end %>
