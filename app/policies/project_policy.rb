@@ -8,4 +8,8 @@ class ProjectPolicy < ApplicationPolicy
   def create?
     user.manager?
   end
+
+  def show?
+    true
+  end
 end

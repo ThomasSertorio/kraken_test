@@ -1,3 +1,7 @@
 <% @projects.each do |project| %>
-  <div><%= project.code %></div>
+  <div>
+    <%= link_to project_path(project) do %>
+      <%= project.code %>
+    <% end %>
+  </div>
 <% end %>

@@ -1,0 +1,8 @@
+<h1><%= @project.code %></h1>
+
+<%= simple_form_for([@project, @work_log]) do |f| %>
+  <%= f.input :works_on %>
+  <%= f.input :duration %>
+  <%= f.submit %>
+<% end %>
+
